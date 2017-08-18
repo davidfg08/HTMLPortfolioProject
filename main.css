@@ -13,18 +13,29 @@ body {
   padding: 0;
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4 {
   margin: 10px 0 15px;
 }
 
+.nav, nav {
+  display: inline;
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+}
+.nav li, nav li {
+  display: inline;
+  margin-right: 1em;
+}
+
 p, ul {
   margin: 10px 0;
 }
 
-ul li {
+.skills ul li {
   margin-left: 30px;;
 }
 
@@ -46,6 +57,10 @@ a:active {
   top: 1px;
 }
 
+a.active {
+  border-bottom: none;
+}
+
 .content-wrapper {
   line-height: 1.4;
   margin: 0 auto;
@@ -57,14 +72,14 @@ a:active {
  * HEADER
  */
 
-.header {
+.header, header {
   align-items: center;
   background-color: #EFEFEF;
-  background-image: url('webdev.jpg');
+  background-image: url('bg.jpg');
   background-position: cover;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  border-top: 4px solid #00b300;
+  border-top: 4px solid #2eb82e;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -77,12 +92,12 @@ a:active {
 }
 
 @media only screen and (max-device-width: 420px)  {
-  .header {
+  .header, header {
     background-size: auto 100%;
   }
 }
 
-.header:before {
+.header:before, header:before {
   background: rgba(0, 0, 0, .7);
   bottom: 0;
   content: ' ';
@@ -94,18 +109,18 @@ a:active {
   z-index: 1;
 }
 
-.header * {
+.header *, header * {
   position: relative;
   z-index: 2;
   text-shadow: 1px 1px 10px black;
 }
 
-.header h1 {
+.header h1, header h1 {
   font-size: 3rem;
   font-weight: 100;
 }
 
-.header h2 {
+.header h2, header h2 {
   font-size: 1.8rem;
   font-weight: 100;
   margin: 5px 0;
@@ -116,6 +131,8 @@ a:active {
  */
 
 .skills {
-  background:#00b300;
+  background: #2eb82e;
   color: white;
-}3
+}
+
+
